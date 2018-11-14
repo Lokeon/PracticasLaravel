@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::name('articulos')->get('/articulos','ArticulosController@index');
+Route::name('insertar_articulo')->get('/articulos/nuevo','Articulos@nuevo');   
